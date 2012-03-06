@@ -1,13 +1,21 @@
-Autoconf-2.68b test results.
+Autoconf-2.68b+4MAR2012 Patches
 
-The autoconf-2.68b testsuite fails randomly on 64bit OSX Lion 10.7.3.
-This repo is a collection of tests/testsuite.dir/NNN directories
-from many runs of make -j 1 check.
+The autoconf-2.68b testsuite with patches attached to bug-autoconf,
+continues to fail randomly on 64bit OSX Lion 10.7.3.
 
-  tests/testsuite.dir/302
+This repo contains the testsuite.dir/NNN directories
+This repo contains ac268b.diff, the current patch collection used.
 
-Would be in the repo as simply 302.
+This data comes from about ten runs of:
+
+  rm -rf everything
+  extract tarball & cd
+  configure
+  make
+  make -j 1 check
+  cd ..
+  rm -rf everything
+
 The commonality is a diff in .before and .after env files.
-
 Thanks for looking.
 
