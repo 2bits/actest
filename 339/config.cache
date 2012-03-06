@@ -1,0 +1,48 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs, see configure's option --config-cache.
+# It is not useful on other systems.  If it contains results you don't
+# want to keep, you may remove or edit it.
+#
+# config.status only pays attention to the cache file if you give it
+# the --recheck option to rerun configure.
+#
+# `ac_cv_env_foo' variables (set or unset) will be overridden when
+# loading this file, other *unset* `ac_cv_foo' will be assigned the
+# following values.
+
+ac_cv_build=${ac_cv_build=x86_64-apple-darwin11.3.0}
+ac_cv_c_compiler_gnu=${ac_cv_c_compiler_gnu=yes}
+ac_cv_env_CC_set=set
+ac_cv_env_CC_value=/usr/bin/llvm-gcc
+ac_cv_env_CFLAGS_set=set
+ac_cv_env_CFLAGS_value='-Os -w -pipe -march=core2 -msse4'
+ac_cv_env_CPPFLAGS_set=
+ac_cv_env_CPPFLAGS_value=
+ac_cv_env_FCFLAGS_set=
+ac_cv_env_FCFLAGS_value=
+ac_cv_env_FC_set=
+ac_cv_env_FC_value=
+ac_cv_env_LDFLAGS_set=
+ac_cv_env_LDFLAGS_value=
+ac_cv_env_LIBS_set=
+ac_cv_env_LIBS_value=
+ac_cv_env_build_alias_set=
+ac_cv_env_build_alias_value=
+ac_cv_env_host_alias_set=
+ac_cv_env_host_alias_value=
+ac_cv_env_target_alias_set=
+ac_cv_env_target_alias_value=
+ac_cv_fc_compiler_gnu=${ac_cv_fc_compiler_gnu=yes}
+ac_cv_fc_dummy_main=${ac_cv_fc_dummy_main=none}
+ac_cv_fc_libs=${ac_cv_fc_libs=' -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -lgfortranbegin -lgfortran'}
+ac_cv_fc_mangling=${ac_cv_fc_mangling='lower case, underscore, no extra underscore'}
+ac_cv_fortran_dummy_main=${ac_cv_fortran_dummy_main=none}
+ac_cv_host=${ac_cv_host=x86_64-apple-darwin11.3.0}
+ac_cv_objext=${ac_cv_objext=o}
+ac_cv_prog_ac_ct_CC=${ac_cv_prog_ac_ct_CC=/usr/bin/llvm-gcc}
+ac_cv_prog_ac_ct_FC=${ac_cv_prog_ac_ct_FC=gfortran}
+ac_cv_prog_cc_c89=${ac_cv_prog_cc_c89=}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g=yes}
+ac_cv_prog_fc_g=${ac_cv_prog_fc_g=yes}
+ac_cv_prog_fc_v=${ac_cv_prog_fc_v=-v}

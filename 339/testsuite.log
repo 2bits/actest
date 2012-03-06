@@ -1,0 +1,458 @@
+#                             -*- compilation -*-
+339. acfortran.at:26: testing AC_FC_WRAPPERS ...
+./acfortran.at:26: autoconf --force -W obsolete
+./acfortran.at:26: /bin/sh -n configure
+./acfortran.at:26: autoheader 
+./acfortran.at:26: ./configure $configure_options -C
+stdout:
+configure: creating cache config.cache
+checking for gfortran... gfortran
+checking whether the Fortran compiler works... yes
+checking for Fortran compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU Fortran compiler... yes
+checking whether gfortran accepts -g... yes
+checking build system type... x86_64-apple-darwin11.3.0
+checking host system type... x86_64-apple-darwin11.3.0
+checking how to get verbose linking output from gfortran... -v
+checking for Fortran libraries of gfortran...  -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -lgfortranbegin -lgfortran
+checking for gcc... /usr/bin/llvm-gcc
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/llvm-gcc accepts -g... yes
+checking for /usr/bin/llvm-gcc option to accept ISO C89... none needed
+checking for dummy main to link with Fortran libraries... none
+checking for Fortran name-mangling scheme... lower case, underscore, no extra underscore
+configure: updating cache config.cache
+configure: creating ./config.status
+config.status: creating config.h
+./acfortran.at:26: at_check_env
+./acfortran.at:26: ./configure $configure_options -C
+stdout:
+configure: loading cache config.cache
+checking for gfortran... (cached) gfortran
+checking whether the Fortran compiler works... yes
+checking for Fortran compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU Fortran compiler... (cached) yes
+checking whether gfortran accepts -g... (cached) yes
+checking build system type... (cached) x86_64-apple-darwin11.3.0
+checking host system type... (cached) x86_64-apple-darwin11.3.0
+checking how to get verbose linking output from gfortran... (cached) -v
+checking for Fortran libraries of gfortran... (cached)  -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -lgfortranbegin -lgfortran
+checking for gcc... (cached) /usr/bin/llvm-gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether /usr/bin/llvm-gcc accepts -g... (cached) yes
+checking for /usr/bin/llvm-gcc option to accept ISO C89... (cached) none needed
+checking for dummy main to link with Fortran libraries... (cached) none
+checking for Fortran name-mangling scheme... (cached) lower case, underscore, no extra underscore
+configure: creating ./config.status
+config.status: creating config.h
+config.status: config.h is unchanged
+./acfortran.at:26: at_check_env
+--- /dev/null	2012-03-06 14:30:51.000000000 -0800
++++ /private/tmp/homebrew-autoconf-2.68b-FNje/autoconf-2.68b/tests/testsuite.dir/at-groups/339/stdout	2012-03-06 14:30:51.000000000 -0800
+@@ -0,0 +1,114 @@
++--- clean-state-env.before	2012-03-06 14:30:51.000000000 -0800
+++++ clean-state-env.after	2012-03-06 14:30:51.000000000 -0800
++@@ -1,111 +0,0 @@
++-AUTOM4TE=autom4te
++-Apple_PubSub_Socket_Render=/tmp/launch-KxfPtt/Render
++-Apple_Ubiquity_Message=/tmp/launch-KGv0zg/Apple_Ubiquity_Message
++-BASH=/bin/sh
++-BASH_ARGC=([0]="1")
++-BASH_ARGV=([0]="-C")
++-BASH_LINENO=([0]="0")
++-BASH_SOURCE=([0]="./configure")
++-BASH_VERSINFO=([0]="3" [1]="2" [2]="48" [3]="1" [4]="release" [5]="x86_64-apple-darwin11")
++-BASH_VERSION='3.2.48(1)-release'
++-CLICOLOR=true
++-COMMAND_MODE=unix2003
++-DIRSTACK=()
++-DISPLAY=/tmp/launch-Q8qWpT/org.x:0
++-DUALCASE=1
++-ECHO_C='\c'
++-ECHO_N=
++-ECHO_T=
++-EDITOR=vi
++-EUID=501
++-GEM_HOME=/usr/local
++-GROUPS=()
++-HOME=/Users/nibbles
++-HOMEBREW_BREW_FILE=/usr/local/bin/brew
++-HOMEBREW_ERROR_PIPE=4
++-HOMEBREW_MAKE_JOBS=3
++-HOSTNAME=LeBus.local
++-HOSTTYPE=x86_64
++-IFS=' 	
++-LANG=en_US.UTF-8
++-LANGUAGE=C
++-LC_ALL=C
++-LD=/usr/bin/llvm-gcc
++-LOGNAME=nibbles
++-MACHTYPE=x86_64-apple-darwin11
++-MAKEFLAGS=
++-MAKELEVEL=4
++-MANPATH=/usr/local/share/man:/usr/share/man:/usr/X11/share/man
++-MFLAGS=
++-OPTERR=1
++-OPTIND=1
++-OSTYPE=darwin11
++-PACKAGE_BUGREPORT=
++-PACKAGE_NAME=
++-PACKAGE_STRING=
++-PACKAGE_TARNAME=
++-PACKAGE_URL=
++-PACKAGE_VERSION=
++-PATH=/private/tmp/homebrew-autoconf-2.68b-FNje/autoconf-2.68b/tests:/usr/local/bin:/usr/local/share/python:/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/Library/Contributions/examples
++-POSIXLY_CORRECT=y
++-PPID=51613
++-PS1='$ '
++-PS2='> '
++-PS4='+ '
++-PWD=/private/tmp/homebrew-autoconf-2.68b-FNje/autoconf-2.68b/tests/testsuite.dir/339
++-PYTHONPATH=/usr/local/lib/python2.7/site-packages
++-SECURITYSESSIONID=186a4
++-SHELL=/bin/sh
++-SHELLOPTS=braceexpand:hashall:interactive-comments:posix
++-SHLVL=4
++-SSH_AUTH_SOCK=/tmp/launch-p4zt4y/Listeners
++-TAR_OPTIONS='--owner=0 --group=0 --numeric-owner'
++-TERM=xterm-256color
++-TERM_PROGRAM=Apple_Terminal
++-TERM_PROGRAM_VERSION=303
++-TERM_SESSION_ID=F7E807D1-C6BB-48F6-8B9B-525E64A78748
++-TMPDIR=/var/folders/02/8j4kgb3s6snglmmgq25h3ypw0000gn/T/
++-UID=501
++-USER=nibbles
++-__CF_USER_TEXT_ENCODING=0x1F5:0:0
++-bindir='${exec_prefix}/bin'
++-cache_file=config.cache
++-containing=
++-datadir='${datarootdir}'
++-datarootdir='${prefix}/share'
++-docdir='${datarootdir}/doc/${PACKAGE}'
++-dvidir='${docdir}'
++-exclude=
++-exitcode=0
++-halt=
++-htmldir='${docdir}'
++-ignore_case=
++-in_files=
++-in_vc_files=
++-includedir='${prefix}/include'
++-infodir='${datarootdir}/info'
++-libdir='${exec_prefix}/lib'
++-libexecdir='${exec_prefix}/libexec'
++-localedir='${datarootdir}/locale'
++-localstatedir='${prefix}/var'
++-mandir='${datarootdir}/man'
++-no_create=
++-no_recursion=
++-non_containing=
++-oldincludedir=/usr/include
++-pdfdir='${docdir}'
++-program_prefix=NONE
++-program_suffix=NONE
++-program_transform_name=s,x,x,
++-prohibit=
++-psdir='${docdir}'
++-require=
++-sbindir='${exec_prefix}/sbin'
++-sharedstatedir='${prefix}/com'
++-silent=
++-site=
++-srcdir=.
++-subdirs=
++-sysconfdir='${prefix}/etc'
++-verbose=
++-with_grep_options=
+./acfortran.at:26: exit code was 1, expected 0
+config.log:
+> This file contains any messages produced by compilers while
+> running configure, to aid debugging if configure makes a mistake.
+> 
+> It was created by configure, which was
+> generated by GNU Autoconf 2.68b.  Invocation command line was
+> 
+>   $ ./configure -C
+> 
+> ## --------- ##
+> ## Platform. ##
+> ## --------- ##
+> 
+> hostname = LeBus.local
+> uname -m = x86_64
+> uname -r = 11.3.0
+> uname -s = Darwin
+> uname -v = Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+> 
+> /usr/bin/uname -p = i386
+> /bin/uname -X     = unknown
+> 
+> /bin/arch              = unknown
+> /usr/bin/arch -k       = unknown
+> /usr/convex/getsysinfo = unknown
+> /usr/bin/hostinfo      = Mach kernel version:
+> 	 Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+> Kernel configured for up to 4 processors.
+> 4 processors are physically available.
+> 4 processors are logically available.
+> Processor type: i486 (Intel 80486)
+> Processors active: 0 1 2 3
+> Primary memory available: 8.00 gigabytes
+> Default processor set: 110 tasks, 487 threads, 4 processors
+> Load average: 1.81, Mach factor: 2.18
+> /bin/machine           = unknown
+> /usr/bin/oslevel       = unknown
+> /bin/universe          = unknown
+> 
+> PATH: /private/tmp/homebrew-autoconf-2.68b-FNje/autoconf-2.68b/tests
+> PATH: /usr/local/bin
+> PATH: /usr/local/share/python
+> PATH: /usr/local/texlive/2011/bin/x86_64-darwin
+> PATH: /usr/bin
+> PATH: /bin
+> PATH: /usr/sbin
+> PATH: /sbin
+> PATH: /usr/X11/bin
+> PATH: /usr/local/Library/Contributions/examples
+> 
+> 
+> ## ----------- ##
+> ## Core tests. ##
+> ## ----------- ##
+> 
+> configure:1749: loading cache config.cache
+> configure:1899: checking for gfortran
+> configure:1926: result: gfortran
+> configure:1952: checking for Fortran compiler version
+> configure:1961: gfortran --version >&5
+> GNU Fortran (GCC) 4.2.1 (Apple Inc. build 5666) (dot 3)
+> Copyright (C) 2007 Free Software Foundation, Inc.
+> 
+> GNU Fortran comes with NO WARRANTY, to the extent permitted by law.
+> You may redistribute copies of GNU Fortran
+> under the terms of the GNU General Public License.
+> For more information about these matters, see the file named COPYING
+> 
+> configure:1972: $? = 0
+> configure:1961: gfortran -v >&5
+> Using built-in specs.
+> Target: i686-apple-darwin11
+> Configured with: /Volumes/Media/Builds/gcc-5666.3/build/obj/src/configure --disable-checking --prefix=/usr --mandir=/share/man --enable-languages=c,objc,c++,obj-c++,fortran --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/include/c++/4.2.1
+> Thread model: posix
+> gcc version 4.2.1 (Apple Inc. build 5666) (dot 3)
+> configure:1972: $? = 0
+> configure:1961: gfortran -V >&5
+> gfortran: argument to `-V' is missing
+> configure:1972: $? = 1
+> configure:1961: gfortran -qversion >&5
+> i686-apple-darwin11-gfortran-4.2.1: no input files
+> configure:1972: $? = 1
+> configure:1987: checking whether the Fortran compiler works
+> configure:2009: gfortran    conftest.f  >&5
+> configure:2013: $? = 0
+> configure:2061: result: yes
+> configure:2064: checking for Fortran compiler default output file name
+> configure:2066: result: a.out
+> configure:2072: checking for suffix of executables
+> configure:2079: gfortran -o conftest    conftest.f  >&5
+> configure:2083: $? = 0
+> configure:2105: result: 
+> configure:2121: checking whether we are cross compiling
+> configure:2129: gfortran -o conftest    conftest.f  >&5
+> configure:2133: $? = 0
+> configure:2140: ./conftest
+> configure:2144: $? = 0
+> configure:2159: result: no
+> configure:2164: checking for suffix of object files
+> configure:2205: result: o
+> configure:2213: checking whether we are using the GNU Fortran compiler
+> configure:2235: result: yes
+> configure:2241: checking whether gfortran accepts -g
+> configure:2260: result: yes
+> configure:2322: checking build system type
+> configure:2336: result: x86_64-apple-darwin11.3.0
+> configure:2356: checking host system type
+> configure:2369: result: x86_64-apple-darwin11.3.0
+> configure:2394: checking how to get verbose linking output from gfortran
+> configure:2505: result: -v
+> configure:2507: checking for Fortran libraries of gfortran
+> configure:2726: result:  -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -lgfortranbegin -lgfortran
+> configure:2785: checking for gcc
+> configure:2812: result: /usr/bin/llvm-gcc
+> configure:3041: checking for C compiler version
+> configure:3050: /usr/bin/llvm-gcc --version >&5
+> i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+> Copyright (C) 2007 Free Software Foundation, Inc.
+> This is free software; see the source for copying conditions.  There is NO
+> warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+> 
+> configure:3061: $? = 0
+> configure:3050: /usr/bin/llvm-gcc -v >&5
+> Using built-in specs.
+> Target: i686-apple-darwin11
+> Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1
+> Thread model: posix
+> gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+> configure:3061: $? = 0
+> configure:3050: /usr/bin/llvm-gcc -V >&5
+> llvm-gcc-4.2: argument to `-V' is missing
+> configure:3061: $? = 1
+> configure:3050: /usr/bin/llvm-gcc -qversion >&5
+> i686-apple-darwin11-llvm-gcc-4.2: no input files
+> configure:3061: $? = 1
+> configure:3065: checking whether we are using the GNU C compiler
+> configure:3101: result: yes
+> configure:3110: checking whether /usr/bin/llvm-gcc accepts -g
+> configure:3195: result: yes
+> configure:3212: checking for /usr/bin/llvm-gcc option to accept ISO C89
+> configure:3296: result: none needed
+> configure:3322: checking for dummy main to link with Fortran libraries
+> configure:3401: result: none
+> configure:3434: checking for Fortran name-mangling scheme
+> configure:3588: result: lower case, underscore, no extra underscore
+> configure:3768: creating ./config.status
+> 
+> ## ---------------------- ##
+> ## Running config.status. ##
+> ## ---------------------- ##
+> 
+> This file was extended by config.status, which was
+> generated by GNU Autoconf 2.68b.  Invocation command line was
+> 
+>   CONFIG_FILES    = 
+>   CONFIG_HEADERS  = 
+>   CONFIG_LINKS    = 
+>   CONFIG_COMMANDS = 
+>   $ ./config.status 
+> 
+> on LeBus.local
+> 
+> config.status:668: creating config.h
+> config.status:758: config.h is unchanged
+> 
+> ## ---------------- ##
+> ## Cache variables. ##
+> ## ---------------- ##
+> 
+> ac_cv_build=x86_64-apple-darwin11.3.0
+> ac_cv_c_compiler_gnu=yes
+> ac_cv_env_CC_set=set
+> ac_cv_env_CC_value=/usr/bin/llvm-gcc
+> ac_cv_env_CFLAGS_set=set
+> ac_cv_env_CFLAGS_value='-Os -w -pipe -march=core2 -msse4'
+> ac_cv_env_CPPFLAGS_set=
+> ac_cv_env_CPPFLAGS_value=
+> ac_cv_env_FCFLAGS_set=
+> ac_cv_env_FCFLAGS_value=
+> ac_cv_env_FC_set=
+> ac_cv_env_FC_value=
+> ac_cv_env_LDFLAGS_set=
+> ac_cv_env_LDFLAGS_value=
+> ac_cv_env_LIBS_set=
+> ac_cv_env_LIBS_value=
+> ac_cv_env_build_alias_set=
+> ac_cv_env_build_alias_value=
+> ac_cv_env_host_alias_set=
+> ac_cv_env_host_alias_value=
+> ac_cv_env_target_alias_set=
+> ac_cv_env_target_alias_value=
+> ac_cv_fc_compiler_gnu=yes
+> ac_cv_fc_dummy_main=none
+> ac_cv_fc_libs=' -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -lgfortranbegin -lgfortran'
+> ac_cv_fc_mangling='lower case, underscore, no extra underscore'
+> ac_cv_fortran_dummy_main=none
+> ac_cv_host=x86_64-apple-darwin11.3.0
+> ac_cv_objext=o
+> ac_cv_prog_ac_ct_CC=/usr/bin/llvm-gcc
+> ac_cv_prog_ac_ct_FC=gfortran
+> ac_cv_prog_cc_c89=
+> ac_cv_prog_cc_g=yes
+> ac_cv_prog_fc_g=yes
+> ac_cv_prog_fc_v=-v
+> 
+> ## ----------------- ##
+> ## Output variables. ##
+> ## ----------------- ##
+> 
+> CC='/usr/bin/llvm-gcc'
+> CFLAGS='-Os -w -pipe -march=core2 -msse4'
+> CPPFLAGS=''
+> DEFS='-DHAVE_CONFIG_H'
+> ECHO_C='\c'
+> ECHO_N=''
+> ECHO_T=''
+> EXEEXT=''
+> FC='gfortran'
+> FCFLAGS='-g -O2'
+> FCLIBS=' -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/x86_64 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1 -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc -L/usr/local/Cellar/gfortran/4.2.4-5666.3/bin/../lib/gcc/i686-apple-darwin11/4.2.1/../../.. -lgfortranbegin -lgfortran'
+> LDFLAGS=''
+> LIBOBJS=''
+> LIBS=''
+> LTLIBOBJS=''
+> OBJEXT='o'
+> PACKAGE_BUGREPORT=''
+> PACKAGE_NAME=''
+> PACKAGE_STRING=''
+> PACKAGE_TARNAME=''
+> PACKAGE_URL=''
+> PACKAGE_VERSION=''
+> PATH_SEPARATOR=':'
+> SHELL='/bin/sh'
+> ac_ct_CC='/usr/bin/llvm-gcc'
+> ac_ct_FC='gfortran'
+> bindir='${exec_prefix}/bin'
+> build='x86_64-apple-darwin11.3.0'
+> build_alias=''
+> build_cpu='x86_64'
+> build_os='darwin11.3.0'
+> build_vendor='apple'
+> datadir='${datarootdir}'
+> datarootdir='${prefix}/share'
+> docdir='${datarootdir}/doc/${PACKAGE}'
+> dvidir='${docdir}'
+> exec_prefix='${prefix}'
+> host='x86_64-apple-darwin11.3.0'
+> host_alias=''
+> host_cpu='x86_64'
+> host_os='darwin11.3.0'
+> host_vendor='apple'
+> htmldir='${docdir}'
+> includedir='${prefix}/include'
+> infodir='${datarootdir}/info'
+> libdir='${exec_prefix}/lib'
+> libexecdir='${exec_prefix}/libexec'
+> localedir='${datarootdir}/locale'
+> localstatedir='${prefix}/var'
+> mandir='${datarootdir}/man'
+> oldincludedir='/usr/include'
+> pdfdir='${docdir}'
+> prefix='/usr/local'
+> program_transform_name='s,x,x,'
+> psdir='${docdir}'
+> sbindir='${exec_prefix}/sbin'
+> sharedstatedir='${prefix}/com'
+> sysconfdir='${prefix}/etc'
+> target_alias=''
+> 
+> ## ----------- ##
+> ## confdefs.h. ##
+> ## ----------- ##
+> 
+> /* confdefs.h */
+> #define PACKAGE_NAME ""
+> #define PACKAGE_TARNAME ""
+> #define PACKAGE_VERSION ""
+> #define PACKAGE_STRING ""
+> #define PACKAGE_BUGREPORT ""
+> #define PACKAGE_URL ""
+> #define FC_FUNC(name,NAME) name ## _
+> #define FC_FUNC_(name,NAME) name ## _
+> 
+> configure: exit 0
+339. acfortran.at:26: 339. AC_FC_WRAPPERS (acfortran.at:26): FAILED (acfortran.at:26)
