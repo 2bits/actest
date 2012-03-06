@@ -1,0 +1,14 @@
+Autoconf-2.68b test results.
+
+The autoconf-2.68b testsuite fails randomly on OSX Lion 10.7.3.
+This repo is a collection of man runs of make -j 1 check,
+where the failed subdirectories are placed here in the repo
+for easy examination.
+
+  tests/testsuite.dir/302
+
+That directory for example is in the repo as simply 302.
+The commonality is a diff in .before and .after env files.
+
+Thanks for looking.
+
