@@ -1,0 +1,670 @@
+#                             -*- compilation -*-
+476. acfunctions.at:18: testing AC_FUNC_FORK ...
+./acfunctions.at:18: autoconf --force -W obsolete
+./acfunctions.at:18: /bin/sh -n configure
+./acfunctions.at:18: autoheader 
+./acfunctions.at:18: ./configure $configure_options -C
+stdout:
+configure: creating cache config.cache
+checking for gcc... /usr/bin/llvm-gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/llvm-gcc accepts -g... yes
+checking for /usr/bin/llvm-gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... /usr/bin/llvm-gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for pid_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+configure: updating cache config.cache
+configure: creating ./config.status
+config.status: creating config.h
+./acfunctions.at:18: at_check_env
+--- /dev/null	2012-03-06 13:55:08.000000000 -0800
++++ /private/tmp/homebrew-autoconf-2.68b-qIxt/autoconf-2.68b/tests/testsuite.dir/at-groups/476/stdout	2012-03-06 13:55:08.000000000 -0800
+@@ -0,0 +1,114 @@
++--- clean-state-env.before	2012-03-06 13:55:08.000000000 -0800
+++++ clean-state-env.after	2012-03-06 13:55:08.000000000 -0800
++@@ -1,111 +0,0 @@
++-AUTOM4TE=autom4te
++-Apple_PubSub_Socket_Render=/tmp/launch-KxfPtt/Render
++-Apple_Ubiquity_Message=/tmp/launch-KGv0zg/Apple_Ubiquity_Message
++-BASH=/bin/sh
++-BASH_ARGC=([0]="1")
++-BASH_ARGV=([0]="-C")
++-BASH_LINENO=([0]="0")
++-BASH_SOURCE=([0]="./configure")
++-BASH_VERSINFO=([0]="3" [1]="2" [2]="48" [3]="1" [4]="release" [5]="x86_64-apple-darwin11")
++-BASH_VERSION='3.2.48(1)-release'
++-CLICOLOR=true
++-COMMAND_MODE=unix2003
++-DIRSTACK=()
++-DISPLAY=/tmp/launch-Q8qWpT/org.x:0
++-DUALCASE=1
++-ECHO_C='\c'
++-ECHO_N=
++-ECHO_T=
++-EDITOR=vi
++-EUID=501
++-GEM_HOME=/usr/local
++-GROUPS=()
++-HOME=/Users/nibbles
++-HOMEBREW_BREW_FILE=/usr/local/bin/brew
++-HOMEBREW_ERROR_PIPE=4
++-HOMEBREW_MAKE_JOBS=3
++-HOSTNAME=LeBus.local
++-HOSTTYPE=x86_64
++-IFS=' 	
++-LANG=en_US.UTF-8
++-LANGUAGE=C
++-LC_ALL=C
++-LD=/usr/bin/llvm-gcc
++-LOGNAME=nibbles
++-MACHTYPE=x86_64-apple-darwin11
++-MAKEFLAGS=
++-MAKELEVEL=4
++-MANPATH=/usr/local/share/man:/usr/share/man:/usr/X11/share/man
++-MFLAGS=
++-OPTERR=1
++-OPTIND=1
++-OSTYPE=darwin11
++-PACKAGE_BUGREPORT=
++-PACKAGE_NAME=
++-PACKAGE_STRING=
++-PACKAGE_TARNAME=
++-PACKAGE_URL=
++-PACKAGE_VERSION=
++-PATH=/private/tmp/homebrew-autoconf-2.68b-qIxt/autoconf-2.68b/tests:/usr/local/bin:/usr/local/share/python:/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/Library/Contributions/examples
++-POSIXLY_CORRECT=y
++-PPID=29880
++-PS1='$ '
++-PS2='> '
++-PS4='+ '
++-PWD=/private/tmp/homebrew-autoconf-2.68b-qIxt/autoconf-2.68b/tests/testsuite.dir/476
++-PYTHONPATH=/usr/local/lib/python2.7/site-packages
++-SECURITYSESSIONID=186a4
++-SHELL=/bin/sh
++-SHELLOPTS=braceexpand:hashall:interactive-comments:posix
++-SHLVL=4
++-SSH_AUTH_SOCK=/tmp/launch-p4zt4y/Listeners
++-TAR_OPTIONS='--owner=0 --group=0 --numeric-owner'
++-TERM=xterm-256color
++-TERM_PROGRAM=Apple_Terminal
++-TERM_PROGRAM_VERSION=303
++-TERM_SESSION_ID=F7E807D1-C6BB-48F6-8B9B-525E64A78748
++-TMPDIR=/var/folders/02/8j4kgb3s6snglmmgq25h3ypw0000gn/T/
++-UID=501
++-USER=nibbles
++-__CF_USER_TEXT_ENCODING=0x1F5:0:0
++-bindir='${exec_prefix}/bin'
++-cache_file=config.cache
++-containing=
++-datadir='${datarootdir}'
++-datarootdir='${prefix}/share'
++-docdir='${datarootdir}/doc/${PACKAGE}'
++-dvidir='${docdir}'
++-exclude=
++-exitcode=0
++-halt=
++-htmldir='${docdir}'
++-ignore_case=
++-in_files=
++-in_vc_files=
++-includedir='${prefix}/include'
++-infodir='${datarootdir}/info'
++-libdir='${exec_prefix}/lib'
++-libexecdir='${exec_prefix}/libexec'
++-localedir='${datarootdir}/locale'
++-localstatedir='${prefix}/var'
++-mandir='${datarootdir}/man'
++-no_create=
++-no_recursion=
++-non_containing=
++-oldincludedir=/usr/include
++-pdfdir='${docdir}'
++-program_prefix=NONE
++-program_suffix=NONE
++-program_transform_name=s,x,x,
++-prohibit=
++-psdir='${docdir}'
++-require=
++-sbindir='${exec_prefix}/sbin'
++-sharedstatedir='${prefix}/com'
++-silent=
++-site=
++-srcdir=.
++-subdirs=
++-sysconfdir='${prefix}/etc'
++-verbose=
++-with_grep_options=
+./acfunctions.at:18: exit code was 1, expected 0
+config.log:
+> This file contains any messages produced by compilers while
+> running configure, to aid debugging if configure makes a mistake.
+> 
+> It was created by configure, which was
+> generated by GNU Autoconf 2.68b.  Invocation command line was
+> 
+>   $ ./configure -C
+> 
+> ## --------- ##
+> ## Platform. ##
+> ## --------- ##
+> 
+> hostname = LeBus.local
+> uname -m = x86_64
+> uname -r = 11.3.0
+> uname -s = Darwin
+> uname -v = Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+> 
+> /usr/bin/uname -p = i386
+> /bin/uname -X     = unknown
+> 
+> /bin/arch              = unknown
+> /usr/bin/arch -k       = unknown
+> /usr/convex/getsysinfo = unknown
+> /usr/bin/hostinfo      = Mach kernel version:
+> 	 Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+> Kernel configured for up to 4 processors.
+> 4 processors are physically available.
+> 4 processors are logically available.
+> Processor type: i486 (Intel 80486)
+> Processors active: 0 1 2 3
+> Primary memory available: 8.00 gigabytes
+> Default processor set: 104 tasks, 453 threads, 4 processors
+> Load average: 1.81, Mach factor: 2.18
+> /bin/machine           = unknown
+> /usr/bin/oslevel       = unknown
+> /bin/universe          = unknown
+> 
+> PATH: /private/tmp/homebrew-autoconf-2.68b-qIxt/autoconf-2.68b/tests
+> PATH: /usr/local/bin
+> PATH: /usr/local/share/python
+> PATH: /usr/local/texlive/2011/bin/x86_64-darwin
+> PATH: /usr/bin
+> PATH: /bin
+> PATH: /usr/sbin
+> PATH: /sbin
+> PATH: /usr/X11/bin
+> PATH: /usr/local/Library/Contributions/examples
+> 
+> 
+> ## ----------- ##
+> ## Core tests. ##
+> ## ----------- ##
+> 
+> configure:2059: creating cache config.cache
+> configure:2196: checking for gcc
+> configure:2223: result: /usr/bin/llvm-gcc
+> configure:2452: checking for C compiler version
+> configure:2461: /usr/bin/llvm-gcc --version >&5
+> i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+> Copyright (C) 2007 Free Software Foundation, Inc.
+> This is free software; see the source for copying conditions.  There is NO
+> warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+> 
+> configure:2472: $? = 0
+> configure:2461: /usr/bin/llvm-gcc -v >&5
+> Using built-in specs.
+> Target: i686-apple-darwin11
+> Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1
+> Thread model: posix
+> gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+> configure:2472: $? = 0
+> configure:2461: /usr/bin/llvm-gcc -V >&5
+> llvm-gcc-4.2: argument to `-V' is missing
+> configure:2472: $? = 1
+> configure:2461: /usr/bin/llvm-gcc -qversion >&5
+> i686-apple-darwin11-llvm-gcc-4.2: no input files
+> configure:2472: $? = 1
+> configure:2492: checking whether the C compiler works
+> configure:2514: /usr/bin/llvm-gcc -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
+> configure:2518: $? = 0
+> configure:2566: result: yes
+> configure:2569: checking for C compiler default output file name
+> configure:2571: result: a.out
+> configure:2577: checking for suffix of executables
+> configure:2584: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
+> configure:2588: $? = 0
+> configure:2610: result: 
+> configure:2632: checking whether we are cross compiling
+> configure:2640: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
+> configure:2644: $? = 0
+> configure:2651: ./conftest
+> configure:2655: $? = 0
+> configure:2670: result: no
+> configure:2675: checking for suffix of object files
+> configure:2697: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:2701: $? = 0
+> configure:2722: result: o
+> configure:2726: checking whether we are using the GNU C compiler
+> configure:2745: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:2745: $? = 0
+> configure:2754: result: yes
+> configure:2763: checking whether /usr/bin/llvm-gcc accepts -g
+> configure:2783: /usr/bin/llvm-gcc -c -g  conftest.c >&5
+> configure:2783: $? = 0
+> configure:2824: result: yes
+> configure:2841: checking for /usr/bin/llvm-gcc option to accept ISO C89
+> configure:2904: /usr/bin/llvm-gcc  -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:2904: $? = 0
+> configure:2917: result: none needed
+> configure:2943: checking how to run the C preprocessor
+> configure:2974: /usr/bin/llvm-gcc -E  conftest.c
+> configure:2974: $? = 0
+> configure:2988: /usr/bin/llvm-gcc -E  conftest.c
+> conftest.c:9:28: error: ac_nonexistent.h: No such file or directory
+> configure:2988: $? = 1
+> configure: failed program was:
+> | /* confdefs.h */
+> | #define PACKAGE_NAME ""
+> | #define PACKAGE_TARNAME ""
+> | #define PACKAGE_VERSION ""
+> | #define PACKAGE_STRING ""
+> | #define PACKAGE_BUGREPORT ""
+> | #define PACKAGE_URL ""
+> | /* end confdefs.h.  */
+> | #include <ac_nonexistent.h>
+> configure:3013: result: /usr/bin/llvm-gcc -E
+> configure:3033: /usr/bin/llvm-gcc -E  conftest.c
+> configure:3033: $? = 0
+> configure:3047: /usr/bin/llvm-gcc -E  conftest.c
+> conftest.c:9:28: error: ac_nonexistent.h: No such file or directory
+> configure:3047: $? = 1
+> configure: failed program was:
+> | /* confdefs.h */
+> | #define PACKAGE_NAME ""
+> | #define PACKAGE_TARNAME ""
+> | #define PACKAGE_VERSION ""
+> | #define PACKAGE_STRING ""
+> | #define PACKAGE_BUGREPORT ""
+> | #define PACKAGE_URL ""
+> | /* end confdefs.h.  */
+> | #include <ac_nonexistent.h>
+> configure:3076: checking for grep that handles long lines and -e
+> configure:3134: result: /usr/bin/grep
+> configure:3139: checking for egrep
+> configure:3201: result: /usr/bin/grep -E
+> configure:3206: checking for ANSI C header files
+> configure:3226: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3226: $? = 0
+> configure:3299: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
+> configure:3299: $? = 0
+> configure:3299: ./conftest
+> configure:3299: $? = 0
+> configure:3310: result: yes
+> configure:3323: checking for sys/types.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for sys/stat.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for stdlib.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for string.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for memory.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for strings.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for inttypes.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for stdint.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3323: checking for unistd.h
+> configure:3323: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3323: $? = 0
+> configure:3323: result: yes
+> configure:3335: checking for pid_t
+> configure:3335: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> configure:3335: $? = 0
+> configure:3335: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> conftest.c: In function 'main':
+> conftest.c:55: error: expected expression before ')' token
+> configure:3335: $? = 1
+> configure: failed program was:
+> | /* confdefs.h */
+> | #define PACKAGE_NAME ""
+> | #define PACKAGE_TARNAME ""
+> | #define PACKAGE_VERSION ""
+> | #define PACKAGE_STRING ""
+> | #define PACKAGE_BUGREPORT ""
+> | #define PACKAGE_URL ""
+> | #define STDC_HEADERS 1
+> | #define HAVE_SYS_TYPES_H 1
+> | #define HAVE_SYS_STAT_H 1
+> | #define HAVE_STDLIB_H 1
+> | #define HAVE_STRING_H 1
+> | #define HAVE_MEMORY_H 1
+> | #define HAVE_STRINGS_H 1
+> | #define HAVE_INTTYPES_H 1
+> | #define HAVE_STDINT_H 1
+> | #define HAVE_UNISTD_H 1
+> | /* end confdefs.h.  */
+> | #include <stdio.h>
+> | #ifdef HAVE_SYS_TYPES_H
+> | # include <sys/types.h>
+> | #endif
+> | #ifdef HAVE_SYS_STAT_H
+> | # include <sys/stat.h>
+> | #endif
+> | #ifdef STDC_HEADERS
+> | # include <stdlib.h>
+> | # include <stddef.h>
+> | #else
+> | # ifdef HAVE_STDLIB_H
+> | #  include <stdlib.h>
+> | # endif
+> | #endif
+> | #ifdef HAVE_STRING_H
+> | # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+> | #  include <memory.h>
+> | # endif
+> | # include <string.h>
+> | #endif
+> | #ifdef HAVE_STRINGS_H
+> | # include <strings.h>
+> | #endif
+> | #ifdef HAVE_INTTYPES_H
+> | # include <inttypes.h>
+> | #endif
+> | #ifdef HAVE_STDINT_H
+> | # include <stdint.h>
+> | #endif
+> | #ifdef HAVE_UNISTD_H
+> | # include <unistd.h>
+> | #endif
+> | int
+> | main ()
+> | {
+> | if (sizeof ((pid_t)))
+> | 	    return 0;
+> |   ;
+> |   return 0;
+> | }
+> configure:3335: result: yes
+> configure:3348: checking vfork.h usability
+> configure:3348: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
+> conftest.c:52:19: error: vfork.h: No such file or directory
+> configure:3348: $? = 1
+> configure: failed program was:
+> | /* confdefs.h */
+> | #define PACKAGE_NAME ""
+> | #define PACKAGE_TARNAME ""
+> | #define PACKAGE_VERSION ""
+> | #define PACKAGE_STRING ""
+> | #define PACKAGE_BUGREPORT ""
+> | #define PACKAGE_URL ""
+> | #define STDC_HEADERS 1
+> | #define HAVE_SYS_TYPES_H 1
+> | #define HAVE_SYS_STAT_H 1
+> | #define HAVE_STDLIB_H 1
+> | #define HAVE_STRING_H 1
+> | #define HAVE_MEMORY_H 1
+> | #define HAVE_STRINGS_H 1
+> | #define HAVE_INTTYPES_H 1
+> | #define HAVE_STDINT_H 1
+> | #define HAVE_UNISTD_H 1
+> | /* end confdefs.h.  */
+> | #include <stdio.h>
+> | #ifdef HAVE_SYS_TYPES_H
+> | # include <sys/types.h>
+> | #endif
+> | #ifdef HAVE_SYS_STAT_H
+> | # include <sys/stat.h>
+> | #endif
+> | #ifdef STDC_HEADERS
+> | # include <stdlib.h>
+> | # include <stddef.h>
+> | #else
+> | # ifdef HAVE_STDLIB_H
+> | #  include <stdlib.h>
+> | # endif
+> | #endif
+> | #ifdef HAVE_STRING_H
+> | # if !defined STDC_HEADERS && defined HAVE_MEMORY_H
+> | #  include <memory.h>
+> | # endif
+> | # include <string.h>
+> | #endif
+> | #ifdef HAVE_STRINGS_H
+> | # include <strings.h>
+> | #endif
+> | #ifdef HAVE_INTTYPES_H
+> | # include <inttypes.h>
+> | #endif
+> | #ifdef HAVE_STDINT_H
+> | # include <stdint.h>
+> | #endif
+> | #ifdef HAVE_UNISTD_H
+> | # include <unistd.h>
+> | #endif
+> | #include <vfork.h>
+> configure:3348: result: no
+> configure:3348: checking vfork.h presence
+> configure:3348: /usr/bin/llvm-gcc -E  conftest.c
+> conftest.c:19:19: error: vfork.h: No such file or directory
+> configure:3348: $? = 1
+> configure: failed program was:
+> | /* confdefs.h */
+> | #define PACKAGE_NAME ""
+> | #define PACKAGE_TARNAME ""
+> | #define PACKAGE_VERSION ""
+> | #define PACKAGE_STRING ""
+> | #define PACKAGE_BUGREPORT ""
+> | #define PACKAGE_URL ""
+> | #define STDC_HEADERS 1
+> | #define HAVE_SYS_TYPES_H 1
+> | #define HAVE_SYS_STAT_H 1
+> | #define HAVE_STDLIB_H 1
+> | #define HAVE_STRING_H 1
+> | #define HAVE_MEMORY_H 1
+> | #define HAVE_STRINGS_H 1
+> | #define HAVE_INTTYPES_H 1
+> | #define HAVE_STDINT_H 1
+> | #define HAVE_UNISTD_H 1
+> | /* end confdefs.h.  */
+> | #include <vfork.h>
+> configure:3348: result: no
+> configure:3348: checking for vfork.h
+> configure:3348: result: no
+> configure:3361: checking for fork
+> configure:3361: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
+> configure:3361: $? = 0
+> configure:3361: result: yes
+> configure:3361: checking for vfork
+> configure:3361: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
+> configure:3361: $? = 0
+> configure:3361: result: yes
+> configure:3371: checking for working fork
+> configure:3393: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
+> configure:3393: $? = 0
+> configure:3393: ./conftest
+> configure:3393: $? = 0
+> configure:3403: result: yes
+> configure:3424: checking for working vfork
+> configure:3534: result: yes
+> configure:3624: updating cache config.cache
+> configure:3673: creating ./config.status
+> 
+> ## ---------------------- ##
+> ## Running config.status. ##
+> ## ---------------------- ##
+> 
+> This file was extended by config.status, which was
+> generated by GNU Autoconf 2.68b.  Invocation command line was
+> 
+>   CONFIG_FILES    = 
+>   CONFIG_HEADERS  = 
+>   CONFIG_LINKS    = 
+>   CONFIG_COMMANDS = 
+>   $ ./config.status 
+> 
+> on LeBus.local
+> 
+> config.status:678: creating config.h
+> 
+> ## ---------------- ##
+> ## Cache variables. ##
+> ## ---------------- ##
+> 
+> ac_cv_c_compiler_gnu=yes
+> ac_cv_env_CC_set=set
+> ac_cv_env_CC_value=/usr/bin/llvm-gcc
+> ac_cv_env_CFLAGS_set=set
+> ac_cv_env_CFLAGS_value='-Os -w -pipe -march=core2 -msse4'
+> ac_cv_env_CPPFLAGS_set=
+> ac_cv_env_CPPFLAGS_value=
+> ac_cv_env_CPP_set=
+> ac_cv_env_CPP_value=
+> ac_cv_env_LDFLAGS_set=
+> ac_cv_env_LDFLAGS_value=
+> ac_cv_env_LIBS_set=
+> ac_cv_env_LIBS_value=
+> ac_cv_env_build_alias_set=
+> ac_cv_env_build_alias_value=
+> ac_cv_env_host_alias_set=
+> ac_cv_env_host_alias_value=
+> ac_cv_env_target_alias_set=
+> ac_cv_env_target_alias_value=
+> ac_cv_func_fork=yes
+> ac_cv_func_fork_works=yes
+> ac_cv_func_vfork=yes
+> ac_cv_func_vfork_works=yes
+> ac_cv_header_inttypes_h=yes
+> ac_cv_header_memory_h=yes
+> ac_cv_header_stdc=yes
+> ac_cv_header_stdint_h=yes
+> ac_cv_header_stdlib_h=yes
+> ac_cv_header_string_h=yes
+> ac_cv_header_strings_h=yes
+> ac_cv_header_sys_stat_h=yes
+> ac_cv_header_sys_types_h=yes
+> ac_cv_header_unistd_h=yes
+> ac_cv_header_vfork_h=no
+> ac_cv_objext=o
+> ac_cv_path_EGREP='/usr/bin/grep -E'
+> ac_cv_path_GREP=/usr/bin/grep
+> ac_cv_prog_CPP='/usr/bin/llvm-gcc -E'
+> ac_cv_prog_ac_ct_CC=/usr/bin/llvm-gcc
+> ac_cv_prog_cc_c89=
+> ac_cv_prog_cc_g=yes
+> ac_cv_type_pid_t=yes
+> 
+> ## ----------------- ##
+> ## Output variables. ##
+> ## ----------------- ##
+> 
+> CC='/usr/bin/llvm-gcc'
+> CFLAGS='-Os -w -pipe -march=core2 -msse4'
+> CPP='/usr/bin/llvm-gcc -E'
+> CPPFLAGS=''
+> DEFS='-DHAVE_CONFIG_H'
+> ECHO_C='\c'
+> ECHO_N=''
+> ECHO_T=''
+> EGREP='/usr/bin/grep -E'
+> EXEEXT=''
+> GREP='/usr/bin/grep'
+> LDFLAGS=''
+> LIBOBJS=''
+> LIBS=''
+> LTLIBOBJS=''
+> OBJEXT='o'
+> PACKAGE_BUGREPORT=''
+> PACKAGE_NAME=''
+> PACKAGE_STRING=''
+> PACKAGE_TARNAME=''
+> PACKAGE_URL=''
+> PACKAGE_VERSION=''
+> PATH_SEPARATOR=':'
+> SHELL='/bin/sh'
+> ac_ct_CC='/usr/bin/llvm-gcc'
+> bindir='${exec_prefix}/bin'
+> build_alias=''
+> datadir='${datarootdir}'
+> datarootdir='${prefix}/share'
+> docdir='${datarootdir}/doc/${PACKAGE}'
+> dvidir='${docdir}'
+> exec_prefix='${prefix}'
+> host_alias=''
+> htmldir='${docdir}'
+> includedir='${prefix}/include'
+> infodir='${datarootdir}/info'
+> libdir='${exec_prefix}/lib'
+> libexecdir='${exec_prefix}/libexec'
+> localedir='${datarootdir}/locale'
+> localstatedir='${prefix}/var'
+> mandir='${datarootdir}/man'
+> oldincludedir='/usr/include'
+> pdfdir='${docdir}'
+> prefix='/usr/local'
+> program_transform_name='s,x,x,'
+> psdir='${docdir}'
+> sbindir='${exec_prefix}/sbin'
+> sharedstatedir='${prefix}/com'
+> sysconfdir='${prefix}/etc'
+> target_alias=''
+> 
+> ## ----------- ##
+> ## confdefs.h. ##
+> ## ----------- ##
+> 
+> /* confdefs.h */
+> #define PACKAGE_NAME ""
+> #define PACKAGE_TARNAME ""
+> #define PACKAGE_VERSION ""
+> #define PACKAGE_STRING ""
+> #define PACKAGE_BUGREPORT ""
+> #define PACKAGE_URL ""
+> #define STDC_HEADERS 1
+> #define HAVE_SYS_TYPES_H 1
+> #define HAVE_SYS_STAT_H 1
+> #define HAVE_STDLIB_H 1
+> #define HAVE_STRING_H 1
+> #define HAVE_MEMORY_H 1
+> #define HAVE_STRINGS_H 1
+> #define HAVE_INTTYPES_H 1
+> #define HAVE_STDINT_H 1
+> #define HAVE_UNISTD_H 1
+> #define HAVE_FORK 1
+> #define HAVE_VFORK 1
+> #define HAVE_WORKING_VFORK 1
+> #define HAVE_WORKING_FORK 1
+> 
+> configure: exit 0
+476. acfunctions.at:18: 476. AC_FUNC_FORK (acfunctions.at:18): FAILED (acfunctions.at:18)

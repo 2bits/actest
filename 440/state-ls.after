@@ -1,0 +1,10 @@
+aclocal.m4
+autom4te.cache
+clean-state-env.after
+clean-state-env.before
+confdefs.h
+configure
+configure.ac
+configure.ac~
+install-sh
+testsuite.log
