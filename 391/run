@@ -1,0 +1,5 @@
+#! /bin/sh
+test "${ZSH_VERSION+set}" = set && alias -g '${1+"$@"}'='"$@"'
+cd '/private/tmp/homebrew-autoconf-2.68b-YNQT/autoconf-2.68b/tests'
+exec ${CONFIG_SHELL-/bin/sh} "/private/tmp/homebrew-autoconf-2.68b-YNQT/autoconf-2.68b/tests/./testsuite" -v -d  391 ${1+"$@"}
+exit 1
