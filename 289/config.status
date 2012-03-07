@@ -427,7 +427,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/private/tmp/homebrew-autoconf-2.68b-FNje/autoconf-2.68b/tests/testsuite.dir/289'
+ac_pwd='/private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/tests/testsuite.dir/289'
 srcdir='.'
 test -n "$AWK" || AWK=awk
 # The default lists apply if the user does not specify any file.

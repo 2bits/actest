@@ -30,13 +30,13 @@ Kernel configured for up to 4 processors.
 Processor type: i486 (Intel 80486)
 Processors active: 0 1 2 3
 Primary memory available: 8.00 gigabytes
-Default processor set: 108 tasks, 458 threads, 4 processors
-Load average: 2.06, Mach factor: 2.15
+Default processor set: 94 tasks, 411 threads, 4 processors
+Load average: 1.77, Mach factor: 2.22
 /bin/machine           = unknown
 /usr/bin/oslevel       = unknown
 /bin/universe          = unknown
 
-PATH: /private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests
+PATH: /private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/tests
 PATH: /usr/local/bin
 PATH: /usr/local/share/python
 PATH: /usr/local/texlive/2011/bin/x86_64-darwin
@@ -54,59 +54,62 @@ PATH: /usr/local/Library/Contributions/examples
 
 configure:1653: creating cache config.cache
 configure:1790: checking for gcc
-configure:1817: result: /usr/bin/clang
+configure:1817: result: /usr/bin/llvm-gcc
 configure:2046: checking for C compiler version
-configure:2055: /usr/bin/clang --version >&5
-Apple clang version 3.1 (tags/Apple/clang-318.0.45) (based on LLVM 3.1svn)
-Target: x86_64-apple-darwin11.3.0
-Thread model: posix
+configure:2055: /usr/bin/llvm-gcc --version >&5
+i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+Copyright (C) 2007 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 configure:2066: $? = 0
-configure:2055: /usr/bin/clang -v >&5
-Apple clang version 3.1 (tags/Apple/clang-318.0.45) (based on LLVM 3.1svn)
-Target: x86_64-apple-darwin11.3.0
+configure:2055: /usr/bin/llvm-gcc -v >&5
+Using built-in specs.
+Target: i686-apple-darwin11
+Configured with: /private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/src/configure --disable-checking --enable-werror --prefix=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2 --mandir=/share/man --enable-languages=c,objc,c++,obj-c++ --program-prefix=llvm- --program-transform-name=/^[cg][^.-]*$/s/$/-4.2/ --with-slibdir=/usr/lib --build=i686-apple-darwin11 --enable-llvm=/private/var/tmp/llvmgcc42/llvmgcc42-2336.9~22/dst-llvmCore/Developer/usr/local --program-prefix=i686-apple-darwin11- --host=x86_64-apple-darwin11 --target=i686-apple-darwin11 --with-gxx-include-dir=/usr/include/c++/4.2.1
 Thread model: posix
+gcc version 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
 configure:2066: $? = 0
-configure:2055: /usr/bin/clang -V >&5
-clang: error: argument to '-V' is missing (expected 1 value)
-clang: error: no input files
+configure:2055: /usr/bin/llvm-gcc -V >&5
+llvm-gcc-4.2: argument to `-V' is missing
 configure:2066: $? = 1
-configure:2055: /usr/bin/clang -qversion >&5
-clang: error: no input files
+configure:2055: /usr/bin/llvm-gcc -qversion >&5
+i686-apple-darwin11-llvm-gcc-4.2: no input files
 configure:2066: $? = 1
 configure:2086: checking whether the C compiler works
-configure:2108: /usr/bin/clang -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments   conftest.c  >&5
+configure:2108: /usr/bin/llvm-gcc -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
 configure:2112: $? = 0
 configure:2160: result: yes
 configure:2163: checking for C compiler default output file name
 configure:2165: result: a.out
 configure:2171: checking for suffix of executables
-configure:2178: /usr/bin/clang -o conftest -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments   conftest.c  >&5
+configure:2178: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
 configure:2182: $? = 0
 configure:2204: result: 
 configure:2226: checking whether we are cross compiling
-configure:2234: /usr/bin/clang -o conftest -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments   conftest.c  >&5
+configure:2234: /usr/bin/llvm-gcc -o conftest -Os -w -pipe -march=core2 -msse4   conftest.c  >&5
 configure:2238: $? = 0
 configure:2245: ./conftest
 configure:2249: $? = 0
 configure:2264: result: no
 configure:2269: checking for suffix of object files
-configure:2291: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+configure:2291: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
 configure:2295: $? = 0
 configure:2316: result: o
 configure:2320: checking whether we are using the GNU C compiler
-configure:2339: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+configure:2339: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
 configure:2339: $? = 0
 configure:2348: result: yes
-configure:2357: checking whether /usr/bin/clang accepts -g
-configure:2377: /usr/bin/clang -c -g  conftest.c >&5
+configure:2357: checking whether /usr/bin/llvm-gcc accepts -g
+configure:2377: /usr/bin/llvm-gcc -c -g  conftest.c >&5
 configure:2377: $? = 0
 configure:2418: result: yes
-configure:2435: checking for /usr/bin/clang option to accept ISO C89
-configure:2498: /usr/bin/clang  -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+configure:2435: checking for /usr/bin/llvm-gcc option to accept ISO C89
+configure:2498: /usr/bin/llvm-gcc  -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
 configure:2498: $? = 0
 configure:2511: result: none needed
 configure:2532: checking for C/C++ restrict keyword
-configure:2557: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+configure:2557: /usr/bin/llvm-gcc -c -Os -w -pipe -march=core2 -msse4  conftest.c >&5
 configure:2557: $? = 0
 configure:2565: result: __restrict
 configure:2643: updating cache config.cache
@@ -136,9 +139,9 @@ config.status:665: creating config.h
 ac_cv_c_compiler_gnu=yes
 ac_cv_c_restrict=__restrict
 ac_cv_env_CC_set=set
-ac_cv_env_CC_value=/usr/bin/clang
+ac_cv_env_CC_value=/usr/bin/llvm-gcc
 ac_cv_env_CFLAGS_set=set
-ac_cv_env_CFLAGS_value='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+ac_cv_env_CFLAGS_value='-Os -w -pipe -march=core2 -msse4'
 ac_cv_env_CPPFLAGS_set=
 ac_cv_env_CPPFLAGS_value=
 ac_cv_env_LDFLAGS_set=
@@ -152,7 +155,7 @@ ac_cv_env_host_alias_value=
 ac_cv_env_target_alias_set=
 ac_cv_env_target_alias_value=
 ac_cv_objext=o
-ac_cv_prog_ac_ct_CC=/usr/bin/clang
+ac_cv_prog_ac_ct_CC=/usr/bin/llvm-gcc
 ac_cv_prog_cc_c89=
 ac_cv_prog_cc_g=yes
 
@@ -160,8 +163,8 @@ ac_cv_prog_cc_g=yes
 ## Output variables. ##
 ## ----------------- ##
 
-CC='/usr/bin/clang'
-CFLAGS='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+CC='/usr/bin/llvm-gcc'
+CFLAGS='-Os -w -pipe -march=core2 -msse4'
 CPPFLAGS=''
 DEFS='-DHAVE_CONFIG_H'
 ECHO_C='\c'
@@ -181,7 +184,7 @@ PACKAGE_URL=''
 PACKAGE_VERSION=''
 PATH_SEPARATOR=':'
 SHELL='/bin/sh'
-ac_ct_CC='/usr/bin/clang'
+ac_ct_CC='/usr/bin/llvm-gcc'
 bindir='${exec_prefix}/bin'
 build_alias=''
 datadir='${datarootdir}'

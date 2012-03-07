@@ -32,16 +32,16 @@ BASH_VERSINFO=([0]="3" [1]="2" [2]="48" [3]="1" [4]="release" [5]="x86_64-apple-
 BASH_VERSION='3.2.48(1)-release'
 CC
 CC
-CC=/usr/bin/clang
+CC=/usr/bin/llvm-gcc
 CFLAGS
 CFLAGS
-CFLAGS='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+CFLAGS='-Os -w -pipe -march=core2 -msse4'
 CLICOLOR=true
 COMMAND_MODE=unix2003
 CPPFLAGS
 CPPFLAGS'
-CXX=/usr/bin/clang++
-CXXFLAGS='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+CXX=/usr/bin/llvm-g++
+CXXFLAGS='-Os -w -pipe -march=core2 -msse4'
 DEFS
 DIRSTACK=()
 DISPLAY=/tmp/launch-Q8qWpT/org.x:0
@@ -67,7 +67,7 @@ IFS='
 LANG=en_US.UTF-8
 LANGUAGE=C
 LC_ALL=C
-LD=/usr/bin/clang
+LD=/usr/bin/llvm-gcc
 LDFLAGS
 LDFLAGS
 LIBOBJS
@@ -81,8 +81,8 @@ MAKEFLAGS=
 MAKELEVEL=4
 MANPATH=/usr/local/share/man:/usr/share/man:/usr/X11/share/man
 MFLAGS=
-OBJCFLAGS='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
-OBJCXXFLAGS='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+OBJCFLAGS='-Os -w -pipe -march=core2 -msse4'
+OBJCXXFLAGS='-Os -w -pipe -march=core2 -msse4'
 OBJEXT
 OPTERR=1
 OPTIND=1
@@ -99,16 +99,16 @@ PACKAGE_URL
 PACKAGE_URL=
 PACKAGE_VERSION
 PACKAGE_VERSION=
-PATH=/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests:/usr/local/bin:/usr/local/share/python:/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/Library/Contributions/examples
+PATH=/private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/tests:/usr/local/bin:/usr/local/share/python:/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/Library/Contributions/examples
 PATH_SEPARATOR
 PATH_SEPARATOR=:
 PIPESTATUS=([0]="0")
 POSIXLY_CORRECT=y
-PPID=78054
+PPID=79357
 PS1='$ '
 PS2='> '
 PS4='+ '
-PWD=/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests/testsuite.dir/293
+PWD=/private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/tests/testsuite.dir/293
 PYTHONPATH=/usr/local/lib/python2.7/site-packages
 SECURITYSESSIONID=186a4
 SHELL'
@@ -120,15 +120,14 @@ TAR_OPTIONS='--owner=0 --group=0 --numeric-owner'
 TERM=xterm-256color
 TERM_PROGRAM=Apple_Terminal
 TERM_PROGRAM_VERSION=303
-TERM_SESSION_ID=F7E807D1-C6BB-48F6-8B9B-525E64A78748
+TERM_SESSION_ID=72D2B15C-CA2D-4371-B761-79DCE664B918
 TMPDIR=/var/folders/02/8j4kgb3s6snglmmgq25h3ypw0000gn/T/
 UID=501
 USER=nibbles
-ZLIB_ROOT=/usr/local/wtf
 _=
 __CF_USER_TEXT_ENCODING=0x1F5:0:0
-ac_abs_confdir=/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests/testsuite.dir/293
-ac_arg='CFLAGS=-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+ac_abs_confdir=/private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/tests/testsuite.dir/293
+ac_arg='CFLAGS=-Os -w -pipe -march=core2 -msse4'
 ac_cache_corrupted=false
 ac_clean_files=
 ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
@@ -136,13 +135,13 @@ ac_compiler_gnu=
 ac_confdir=.
 ac_config_headers=' config.h:config.hin'
 ac_config_libobj_dir=.
-ac_configure_args=' '\''-C'\'' '\''CC=/usr/bin/clang'\'' '\''CFLAGS=-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'\'''
+ac_configure_args=' '\''-C'\'' '\''CC=/usr/bin/llvm-gcc'\'' '\''CFLAGS=-Os -w -pipe -march=core2 -msse4'\'''
 ac_cpp='$CPP $CPPFLAGS'
 ac_ct_CC
 ac_cv_env_CC_set=set
-ac_cv_env_CC_value=/usr/bin/clang
+ac_cv_env_CC_value=/usr/bin/llvm-gcc
 ac_cv_env_CFLAGS_set=set
-ac_cv_env_CFLAGS_value='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+ac_cv_env_CFLAGS_value='-Os -w -pipe -march=core2 -msse4'
 ac_cv_env_CPPFLAGS_set=
 ac_cv_env_CPPFLAGS_value=
 ac_cv_env_LDFLAGS_set=
@@ -158,9 +157,9 @@ ac_cv_env_target_alias_value=
 ac_dashdash=
 ac_default_prefix=/usr/local
 ac_env_CC_set=set
-ac_env_CC_value=/usr/bin/clang
+ac_env_CC_value=/usr/bin/llvm-gcc
 ac_env_CFLAGS_set=set
-ac_env_CFLAGS_value='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+ac_env_CFLAGS_value='-Os -w -pipe -march=core2 -msse4'
 ac_env_CPPFLAGS_set=
 ac_env_CPPFLAGS_value=
 ac_env_LDFLAGS_set=
@@ -178,7 +177,7 @@ ac_hostname=LeBus.local
 ac_init_help=
 ac_init_version=false
 ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
-ac_ls_di='20383721 .'
+ac_ls_di='20612430 .'
 ac_msg='sources are in ., but `cd .'\'' does not work'
 ac_must_keep_next=false
 ac_new_set=
@@ -190,8 +189,8 @@ ac_option=-C
 ac_pass=2
 ac_precious_vars='build_alias
 ac_prev=
-ac_pwd=/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests/testsuite.dir/293
-ac_pwd_ls_di='20383721 .'
+ac_pwd=/private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/tests/testsuite.dir/293
+ac_pwd_ls_di='20612430 .'
 ac_signal=0
 ac_site_file1=/usr/local/share/config.site
 ac_site_file2=/usr/local/etc/config.site

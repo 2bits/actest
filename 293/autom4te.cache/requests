@@ -7,11 +7,11 @@
                       '0',
                       1,
                       [
-                        '/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/lib',
+                        '/private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/lib',
                         '/usr/local/Cellar/autoconf/2.68b/share/autoconf'
                       ],
                       [
-                        '/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/lib/autoconf/autoconf.m4f',
+                        '/private/tmp/homebrew-autoconf-2.68b-hG7t/autoconf-2.68b/lib/autoconf/autoconf.m4f',
                         'aclocal.m4',
                         'configure.ac'
                       ],
