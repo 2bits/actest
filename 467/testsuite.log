@@ -1,0 +1,530 @@
+#                             -*- compilation -*-
+467. actypes.at:39: testing AC_STRUCT_ST_BLKSIZE ...
+./actypes.at:39: autoconf --force 
+./actypes.at:39: /bin/sh -n configure
+./actypes.at:39: autoheader 
+./actypes.at:39: ./configure $configure_options 
+stdout:
+checking for gcc... /usr/bin/clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/clang accepts -g... yes
+checking for /usr/bin/clang option to accept ISO C89... none needed
+checking how to run the C preprocessor... /usr/bin/clang -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for struct stat.st_blksize... yes
+configure: creating ./config.status
+config.status: creating config.h
+./actypes.at:39: at_check_env
+./actypes.at:39: autoupdate 
+stderr:
+configure.ac:4: warning: your code should no longer depend upon `HAVE_ST_BLKSIZE', but
+`HAVE_STRUCT_STAT_ST_BLKSIZE'.  Remove this warning and
+the `AC_DEFINE' when you adjust the code.
+./actypes.at:39: grep '^AC_STRUCT_ST_BLKSIZE$' configure.ac
+./actypes.at:39: autoconf --force 
+./actypes.at:39: /bin/sh -n configure
+./actypes.at:39: autoheader 
+./actypes.at:39: ./configure $configure_options 
+stdout:
+checking for gcc... /usr/bin/clang
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/clang accepts -g... yes
+checking for /usr/bin/clang option to accept ISO C89... none needed
+checking how to run the C preprocessor... /usr/bin/clang -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for struct stat.st_blksize... yes
+configure: creating ./config.status
+config.status: creating config.h
+config.status: config.h is unchanged
+./actypes.at:39: at_check_env
+--- /dev/null	2012-03-07 00:48:20.000000000 -0800
++++ /private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests/testsuite.dir/at-groups/467/stdout	2012-03-07 00:48:20.000000000 -0800
+@@ -0,0 +1,115 @@
++--- clean-state-env.before	2012-03-07 00:48:20.000000000 -0800
+++++ clean-state-env.after	2012-03-07 00:48:20.000000000 -0800
++@@ -1,112 +0,0 @@
++-AUTOM4TE=autom4te
++-Apple_PubSub_Socket_Render=/tmp/launch-KxfPtt/Render
++-Apple_Ubiquity_Message=/tmp/launch-KGv0zg/Apple_Ubiquity_Message
++-BASH=/bin/sh
++-BASH_ARGC=()
++-BASH_ARGV=()
++-BASH_LINENO=([0]="0")
++-BASH_SOURCE=([0]="./configure")
++-BASH_VERSINFO=([0]="3" [1]="2" [2]="48" [3]="1" [4]="release" [5]="x86_64-apple-darwin11")
++-BASH_VERSION='3.2.48(1)-release'
++-CLICOLOR=true
++-COMMAND_MODE=unix2003
++-DIRSTACK=()
++-DISPLAY=/tmp/launch-Q8qWpT/org.x:0
++-DUALCASE=1
++-ECHO_C='\c'
++-ECHO_N=
++-ECHO_T=
++-EDITOR=vi
++-EUID=501
++-GEM_HOME=/usr/local
++-GROUPS=()
++-HOME=/Users/nibbles
++-HOMEBREW_BREW_FILE=/usr/local/bin/brew
++-HOMEBREW_ERROR_PIPE=4
++-HOMEBREW_MAKE_JOBS=3
++-HOSTNAME=LeBus.local
++-HOSTTYPE=x86_64
++-IFS=' 	
++-LANG=en_US.UTF-8
++-LANGUAGE=C
++-LC_ALL=C
++-LD=/usr/bin/clang
++-LOGNAME=nibbles
++-MACHTYPE=x86_64-apple-darwin11
++-MAKEFLAGS=
++-MAKELEVEL=4
++-MANPATH=/usr/local/share/man:/usr/share/man:/usr/X11/share/man
++-MFLAGS=
++-OPTERR=1
++-OPTIND=1
++-OSTYPE=darwin11
++-PACKAGE_BUGREPORT=
++-PACKAGE_NAME=
++-PACKAGE_STRING=
++-PACKAGE_TARNAME=
++-PACKAGE_URL=
++-PACKAGE_VERSION=
++-PATH=/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests:/usr/local/bin:/usr/local/share/python:/usr/local/texlive/2011/bin/x86_64-darwin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/Library/Contributions/examples
++-POSIXLY_CORRECT=y
++-PPID=10770
++-PS1='$ '
++-PS2='> '
++-PS4='+ '
++-PWD=/private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests/testsuite.dir/467
++-PYTHONPATH=/usr/local/lib/python2.7/site-packages
++-SECURITYSESSIONID=186a4
++-SHELL=/bin/sh
++-SHELLOPTS=braceexpand:hashall:interactive-comments:posix
++-SHLVL=4
++-SSH_AUTH_SOCK=/tmp/launch-p4zt4y/Listeners
++-TAR_OPTIONS='--owner=0 --group=0 --numeric-owner'
++-TERM=xterm-256color
++-TERM_PROGRAM=Apple_Terminal
++-TERM_PROGRAM_VERSION=303
++-TERM_SESSION_ID=F7E807D1-C6BB-48F6-8B9B-525E64A78748
++-TMPDIR=/var/folders/02/8j4kgb3s6snglmmgq25h3ypw0000gn/T/
++-UID=501
++-USER=nibbles
++-ZLIB_ROOT=/usr/local/wtf
++-__CF_USER_TEXT_ENCODING=0x1F5:0:0
++-bindir='${exec_prefix}/bin'
++-cache_file=/dev/null
++-containing=
++-datadir='${datarootdir}'
++-datarootdir='${prefix}/share'
++-docdir='${datarootdir}/doc/${PACKAGE}'
++-dvidir='${docdir}'
++-exclude=
++-exitcode=0
++-halt=
++-htmldir='${docdir}'
++-ignore_case=
++-in_files=
++-in_vc_files=
++-includedir='${prefix}/include'
++-infodir='${datarootdir}/info'
++-libdir='${exec_prefix}/lib'
++-libexecdir='${exec_prefix}/libexec'
++-localedir='${datarootdir}/locale'
++-localstatedir='${prefix}/var'
++-mandir='${datarootdir}/man'
++-no_create=
++-no_recursion=
++-non_containing=
++-oldincludedir=/usr/include
++-pdfdir='${docdir}'
++-program_prefix=NONE
++-program_suffix=NONE
++-program_transform_name=s,x,x,
++-prohibit=
++-psdir='${docdir}'
++-require=
++-sbindir='${exec_prefix}/sbin'
++-sharedstatedir='${prefix}/com'
++-silent=
++-site=
++-srcdir=.
++-subdirs=
++-sysconfdir='${prefix}/etc'
++-verbose=
++-with_grep_options=
+./actypes.at:39: exit code was 1, expected 0
+config.log:
+> This file contains any messages produced by compilers while
+> running configure, to aid debugging if configure makes a mistake.
+> 
+> It was created by configure, which was
+> generated by GNU Autoconf 2.68b.  Invocation command line was
+> 
+>   $ ./configure 
+> 
+> ## --------- ##
+> ## Platform. ##
+> ## --------- ##
+> 
+> hostname = LeBus.local
+> uname -m = x86_64
+> uname -r = 11.3.0
+> uname -s = Darwin
+> uname -v = Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+> 
+> /usr/bin/uname -p = i386
+> /bin/uname -X     = unknown
+> 
+> /bin/arch              = unknown
+> /usr/bin/arch -k       = unknown
+> /usr/convex/getsysinfo = unknown
+> /usr/bin/hostinfo      = Mach kernel version:
+> 	 Darwin Kernel Version 11.3.0: Thu Jan 12 18:47:41 PST 2012; root:xnu-1699.24.23~1/RELEASE_X86_64
+> Kernel configured for up to 4 processors.
+> 4 processors are physically available.
+> 4 processors are logically available.
+> Processor type: i486 (Intel 80486)
+> Processors active: 0 1 2 3
+> Primary memory available: 8.00 gigabytes
+> Default processor set: 105 tasks, 450 threads, 4 processors
+> Load average: 2.80, Mach factor: 1.26
+> /bin/machine           = unknown
+> /usr/bin/oslevel       = unknown
+> /bin/universe          = unknown
+> 
+> PATH: /private/tmp/homebrew-autoconf-2.68b-yWwK/autoconf-2.68b/tests
+> PATH: /usr/local/bin
+> PATH: /usr/local/share/python
+> PATH: /usr/local/texlive/2011/bin/x86_64-darwin
+> PATH: /usr/bin
+> PATH: /bin
+> PATH: /usr/sbin
+> PATH: /sbin
+> PATH: /usr/X11/bin
+> PATH: /usr/local/Library/Contributions/examples
+> 
+> 
+> ## ----------- ##
+> ## Core tests. ##
+> ## ----------- ##
+> 
+> configure:1999: checking for gcc
+> configure:2026: result: /usr/bin/clang
+> configure:2255: checking for C compiler version
+> configure:2264: /usr/bin/clang --version >&5
+> Apple clang version 3.1 (tags/Apple/clang-318.0.45) (based on LLVM 3.1svn)
+> Target: x86_64-apple-darwin11.3.0
+> Thread model: posix
+> configure:2275: $? = 0
+> configure:2264: /usr/bin/clang -v >&5
+> Apple clang version 3.1 (tags/Apple/clang-318.0.45) (based on LLVM 3.1svn)
+> Target: x86_64-apple-darwin11.3.0
+> Thread model: posix
+> configure:2275: $? = 0
+> configure:2264: /usr/bin/clang -V >&5
+> clang: error: argument to '-V' is missing (expected 1 value)
+> clang: error: no input files
+> configure:2275: $? = 1
+> configure:2264: /usr/bin/clang -qversion >&5
+> clang: error: no input files
+> configure:2275: $? = 1
+> configure:2295: checking whether the C compiler works
+> configure:2317: /usr/bin/clang -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments   conftest.c  >&5
+> configure:2321: $? = 0
+> configure:2369: result: yes
+> configure:2372: checking for C compiler default output file name
+> configure:2374: result: a.out
+> configure:2380: checking for suffix of executables
+> configure:2387: /usr/bin/clang -o conftest -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments   conftest.c  >&5
+> configure:2391: $? = 0
+> configure:2413: result: 
+> configure:2435: checking whether we are cross compiling
+> configure:2443: /usr/bin/clang -o conftest -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments   conftest.c  >&5
+> configure:2447: $? = 0
+> configure:2454: ./conftest
+> configure:2458: $? = 0
+> configure:2473: result: no
+> configure:2478: checking for suffix of object files
+> configure:2500: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:2504: $? = 0
+> configure:2525: result: o
+> configure:2529: checking whether we are using the GNU C compiler
+> configure:2548: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:2548: $? = 0
+> configure:2557: result: yes
+> configure:2566: checking whether /usr/bin/clang accepts -g
+> configure:2586: /usr/bin/clang -c -g  conftest.c >&5
+> configure:2586: $? = 0
+> configure:2627: result: yes
+> configure:2644: checking for /usr/bin/clang option to accept ISO C89
+> configure:2707: /usr/bin/clang  -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:2707: $? = 0
+> configure:2720: result: none needed
+> configure:2746: checking how to run the C preprocessor
+> configure:2777: /usr/bin/clang -E  conftest.c
+> configure:2777: $? = 0
+> configure:2791: /usr/bin/clang -E  conftest.c
+> conftest.c:9:10: fatal error: 'ac_nonexistent.h' file not found
+> #include <ac_nonexistent.h>
+>          ^
+> 1 error generated.
+> configure:2791: $? = 1
+> configure: failed program was:
+> | /* confdefs.h */
+> | #define PACKAGE_NAME ""
+> | #define PACKAGE_TARNAME ""
+> | #define PACKAGE_VERSION ""
+> | #define PACKAGE_STRING ""
+> | #define PACKAGE_BUGREPORT ""
+> | #define PACKAGE_URL ""
+> | /* end confdefs.h.  */
+> | #include <ac_nonexistent.h>
+> configure:2816: result: /usr/bin/clang -E
+> configure:2836: /usr/bin/clang -E  conftest.c
+> configure:2836: $? = 0
+> configure:2850: /usr/bin/clang -E  conftest.c
+> conftest.c:9:10: fatal error: 'ac_nonexistent.h' file not found
+> #include <ac_nonexistent.h>
+>          ^
+> 1 error generated.
+> configure:2850: $? = 1
+> configure: failed program was:
+> | /* confdefs.h */
+> | #define PACKAGE_NAME ""
+> | #define PACKAGE_TARNAME ""
+> | #define PACKAGE_VERSION ""
+> | #define PACKAGE_STRING ""
+> | #define PACKAGE_BUGREPORT ""
+> | #define PACKAGE_URL ""
+> | /* end confdefs.h.  */
+> | #include <ac_nonexistent.h>
+> configure:2879: checking for grep that handles long lines and -e
+> configure:2937: result: /usr/bin/grep
+> configure:2942: checking for egrep
+> configure:3004: result: /usr/bin/grep -E
+> configure:3009: checking for ANSI C header files
+> configure:3029: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3029: $? = 0
+> configure:3102: /usr/bin/clang -o conftest -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments   conftest.c  >&5
+> configure:3102: $? = 0
+> configure:3102: ./conftest
+> configure:3102: $? = 0
+> configure:3113: result: yes
+> configure:3126: checking for sys/types.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for sys/stat.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for stdlib.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for string.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for memory.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for strings.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for inttypes.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for stdint.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3126: checking for unistd.h
+> configure:3126: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3126: $? = 0
+> configure:3126: result: yes
+> configure:3138: checking for struct stat.st_blksize
+> configure:3138: /usr/bin/clang -c -Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments  conftest.c >&5
+> configure:3138: $? = 0
+> configure:3138: result: yes
+> configure:3265: creating ./config.status
+> 
+> ## ---------------------- ##
+> ## Running config.status. ##
+> ## ---------------------- ##
+> 
+> This file was extended by config.status, which was
+> generated by GNU Autoconf 2.68b.  Invocation command line was
+> 
+>   CONFIG_FILES    = 
+>   CONFIG_HEADERS  = 
+>   CONFIG_LINKS    = 
+>   CONFIG_COMMANDS = 
+>   $ ./config.status 
+> 
+> on LeBus.local
+> 
+> config.status:676: creating config.h
+> config.status:766: config.h is unchanged
+> 
+> ## ---------------- ##
+> ## Cache variables. ##
+> ## ---------------- ##
+> 
+> ac_cv_c_compiler_gnu=yes
+> ac_cv_env_CC_set=set
+> ac_cv_env_CC_value=/usr/bin/clang
+> ac_cv_env_CFLAGS_set=set
+> ac_cv_env_CFLAGS_value='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+> ac_cv_env_CPPFLAGS_set=
+> ac_cv_env_CPPFLAGS_value=
+> ac_cv_env_CPP_set=
+> ac_cv_env_CPP_value=
+> ac_cv_env_LDFLAGS_set=
+> ac_cv_env_LDFLAGS_value=
+> ac_cv_env_LIBS_set=
+> ac_cv_env_LIBS_value=
+> ac_cv_env_build_alias_set=
+> ac_cv_env_build_alias_value=
+> ac_cv_env_host_alias_set=
+> ac_cv_env_host_alias_value=
+> ac_cv_env_target_alias_set=
+> ac_cv_env_target_alias_value=
+> ac_cv_header_inttypes_h=yes
+> ac_cv_header_memory_h=yes
+> ac_cv_header_stdc=yes
+> ac_cv_header_stdint_h=yes
+> ac_cv_header_stdlib_h=yes
+> ac_cv_header_string_h=yes
+> ac_cv_header_strings_h=yes
+> ac_cv_header_sys_stat_h=yes
+> ac_cv_header_sys_types_h=yes
+> ac_cv_header_unistd_h=yes
+> ac_cv_member_struct_stat_st_blksize=yes
+> ac_cv_objext=o
+> ac_cv_path_EGREP='/usr/bin/grep -E'
+> ac_cv_path_GREP=/usr/bin/grep
+> ac_cv_prog_CPP='/usr/bin/clang -E'
+> ac_cv_prog_ac_ct_CC=/usr/bin/clang
+> ac_cv_prog_cc_c89=
+> ac_cv_prog_cc_g=yes
+> 
+> ## ----------------- ##
+> ## Output variables. ##
+> ## ----------------- ##
+> 
+> CC='/usr/bin/clang'
+> CFLAGS='-Os -w -pipe -march=native -Xclang -target-feature -Xclang -aes -Qunused-arguments'
+> CPP='/usr/bin/clang -E'
+> CPPFLAGS=''
+> DEFS='-DHAVE_CONFIG_H'
+> ECHO_C='\c'
+> ECHO_N=''
+> ECHO_T=''
+> EGREP='/usr/bin/grep -E'
+> EXEEXT=''
+> GREP='/usr/bin/grep'
+> LDFLAGS=''
+> LIBOBJS=''
+> LIBS=''
+> LTLIBOBJS=''
+> OBJEXT='o'
+> PACKAGE_BUGREPORT=''
+> PACKAGE_NAME=''
+> PACKAGE_STRING=''
+> PACKAGE_TARNAME=''
+> PACKAGE_URL=''
+> PACKAGE_VERSION=''
+> PATH_SEPARATOR=':'
+> SHELL='/bin/sh'
+> ac_ct_CC='/usr/bin/clang'
+> bindir='${exec_prefix}/bin'
+> build_alias=''
+> datadir='${datarootdir}'
+> datarootdir='${prefix}/share'
+> docdir='${datarootdir}/doc/${PACKAGE}'
+> dvidir='${docdir}'
+> exec_prefix='${prefix}'
+> host_alias=''
+> htmldir='${docdir}'
+> includedir='${prefix}/include'
+> infodir='${datarootdir}/info'
+> libdir='${exec_prefix}/lib'
+> libexecdir='${exec_prefix}/libexec'
+> localedir='${datarootdir}/locale'
+> localstatedir='${prefix}/var'
+> mandir='${datarootdir}/man'
+> oldincludedir='/usr/include'
+> pdfdir='${docdir}'
+> prefix='/usr/local'
+> program_transform_name='s,x,x,'
+> psdir='${docdir}'
+> sbindir='${exec_prefix}/sbin'
+> sharedstatedir='${prefix}/com'
+> sysconfdir='${prefix}/etc'
+> target_alias=''
+> 
+> ## ----------- ##
+> ## confdefs.h. ##
+> ## ----------- ##
+> 
+> /* confdefs.h */
+> #define PACKAGE_NAME ""
+> #define PACKAGE_TARNAME ""
+> #define PACKAGE_VERSION ""
+> #define PACKAGE_STRING ""
+> #define PACKAGE_BUGREPORT ""
+> #define PACKAGE_URL ""
+> #define STDC_HEADERS 1
+> #define HAVE_SYS_TYPES_H 1
+> #define HAVE_SYS_STAT_H 1
+> #define HAVE_STDLIB_H 1
+> #define HAVE_STRING_H 1
+> #define HAVE_MEMORY_H 1
+> #define HAVE_STRINGS_H 1
+> #define HAVE_INTTYPES_H 1
+> #define HAVE_STDINT_H 1
+> #define HAVE_UNISTD_H 1
+> #define HAVE_STRUCT_STAT_ST_BLKSIZE 1
+> #define HAVE_ST_BLKSIZE 1
+> 
+> configure: exit 0
+467. actypes.at:39: 467. AC_STRUCT_ST_BLKSIZE (actypes.at:39): FAILED (actypes.at:39)
