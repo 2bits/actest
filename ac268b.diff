@@ -143,3 +143,33 @@
  fi
  } [#]at_check_env])
  
+--- a/tests/local.at
++++ b/tests/local.at
+@@ -47,10 +47,11 @@ AT_CHECK([$at_diff "$1" "$2"])
+ # AT_CHECK_SHELL_SYNTAX(PROGRAM)
+ # ------------------------------
+ # If the shell handles `-n' well, use it to check the syntax of PROGRAM;
+-# otherwise, do nothing.
++# otherwise, do nothing. ksh93 -n also spits outs loads of warnings
++# about older constructs, but we don't care about the warnings.
+ m4_define([AT_CHECK_SHELL_SYNTAX],
+ [AT_SKIP_IF([test "$ac_cv_sh_n_works" != yes])
+-AT_CHECK([/bin/sh -n $1])])
++AT_CHECK([/bin/sh -n $1], [], [], [ignore])])
+ 
+ m4_define([AT_CHECK_PERL_SYNTAX],
+ [AT_CHECK([autom4te_perllibdir=$abs_top_srcdir/lib $PERL -c "$abs_top_builddir"/bin/$1],
+--- a/tests/local.at	2012-03-07 17:15:27.000000000 -0800
++++ b/tests/local.at	2012-03-07 17:18:39.000000000 -0800
+@@ -331,10 +331,7 @@
+       # There may be variables spread on several lines; remove latter lines.
+       $GREP '^m4_defn([m4_re_word])=' >clean-$act_file ||
+         test $? -eq 1 || grep_failed=:
+-    if test -s stderr-$act_file; then
+-      cat stderr-$act_file >&2
+-      grep_failed=:
+-    fi
++    test -s stderr-$act_file && grep_failed=:
+   done
+   $at_traceon
+   $grep_failed || $at_diff clean-state-env.before clean-state-env.after

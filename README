@@ -1,5 +1,7 @@
 Autoconf-2.68b+4MAR2012 Patches
 
+(Problem is solved - Issue closed.  Read on if you like)
+
 The autoconf-2.68b testsuite with patches attached to bug-autoconf,
 continues to fail randomly on 64bit OSX Lion 10.7.3.
 
@@ -24,4 +26,11 @@ UPDATE: 7 MAR 2012 - Paul put a possible fix for this issue that caused
 more tests to fail, and the test results from that run are all named
 by the Run 10 commit message, directories 280-299.  The patch used has
 been added to ac268b.diff for viewing.
+
+
+UPDATE: 7 MAR 2012: Paul solved the issue, a known bug in grep-2.5.1
+compiled by Apple for Lion.  A patch fixes all test fails.
+The patch set, ac268b.diff has been updated with all the patches used.
+
+See also: https://bugzilla.mozilla.org/show_bug.cgi?id=655339#c25
 
